@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/register.css" />
+</head>
+<body>
+<?php
+        include_once("navbar.php");
+        ?>
+  <h2>Register</h2>
+  <form action="php/register.php" method="POST">
+    <div class='register'>
+    <input name='full_name' placeholder='Full name' type='text' required>
+    <input name='email' placeholder='E-Mail Address' type='text' required>
+    <input type="text" placeholder="Enter Contact number" name="contact" required>
+    <input type="text" placeholder="Enter age" name="age" required>
+    <input type="text" placeholder="Enter your profession" name="profession" required>
+    <br><br>
+    Event  
+    <select name="event" class="event" required>
+            <option value="bigdata">Big Data</option>
+            <option value="iot">IOT</option>
+            <option value="Machine Learning">Machine Learning</option>
+    </select>
+  
+    <div class='terms' required>
+      <input id='agree' name='agree' type='checkbox' required>
+      <label for='agree'></label>Accept terms and conditions
+    </div>
+
+    <input class='animated' type='submit' value='Register'>
+  </div>
+</form>
+<img src="media/root.png" class="logo" width="70" height="70"/>
+</body>
+</html>

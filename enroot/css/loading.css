@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana;
+}
+
+body{
+    background: whitesmoke;
+}
+
+.container{
+    position: fixed;
+    top:40%;
+    left: 45%;
+    width: 100%;
+
+}
+.container li{
+    color: #848484; 
+    text-transform: uppercase;
+    display: block;
+    font-size: 400%;
+    font-weight: 550;
+    letter-spacing: 6px;
+    background:whitesmoke;
+    animation: text 4s;
+    animation-iteration-count: 1;
+    
+}
+@keyframes text{
+   
+    0%{
+        letter-spacing: 20px;
+    }
+} 
+#page {
+    display: none;
+    }
+.stage{
+    width:1520px ;
+    height:768px;
+    filter: blur(3px);
+}
+.enrt{
+    position: absolute;
+    top:20%;
+    height: 181px;
+    
+}
+#quote{
+    position: absolute;;
+    font-family: cursive;
+    color: whitesmoke;
+    top:45%;
+    left: 0%;
+    font-size:70px;
+    text-align: left;
+}
+
+.logo_1{
+    padding:0px;
+    position:fixed;
+    top: 40%;
+    left: 35%;
+    
+    animation : fadein 5s;
+}
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}

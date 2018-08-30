@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>ENROOT MUMBAI</title>
+    <link rel="stylesheet" href="css/loading.css" />
+</head>
+<body onload="myFunction()">
+    
+    <div id="con1" >
+    <ul class="container">
+        <li>ENROOT</li>
+        <li>MUMBAI</li>
+    </ul>
+    <div >
+        <img src="media/root.png" class="logo_1" width="150" height="150" />
+    </div>
+    </div>
+    
+    <div  style="display:none;" id="page">
+        <?php
+        include_once("navbar.php");
+        ?>
+        <br>
+    <img src="media/stage.jpg" class="stage" />
+    <img src="media/Enroot.png"class= "enrt"/>  
+        <p id="quote">AS LONG AS ENTHUSIASM HOLDS OUT,<br>SO WILL NEW OPPORTUNITIES.</p>
+    </div>
+
+<script>
+    var myVar;
+    function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+    }
+    
+    function showPage() {
+      document.getElementById("con1").style.display = "none";
+      document.getElementById("page").style.display = "block";
+    }
+    </script>
+</body>
+</html>
